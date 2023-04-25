@@ -3,5 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Murilo Messias de Camargo <murilo.messias@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "type-check": "tsc --project tsconfig.json --pretty --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "18.16.0",
+    "typescript": "5.0.4"
+  }
 }
