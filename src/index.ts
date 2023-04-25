@@ -1,1 +1,1 @@
-console.log("typescript log message!");
+console.log('typescript log message!')
