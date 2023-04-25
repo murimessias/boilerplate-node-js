@@ -8,10 +8,16 @@
   "scripts": {
     "lint": "eslint . --ext js,ts",
     "lint:fix": "eslint --fix . --ext js,ts",
+    "prepare": "husky install",
     "test": "jest",
     "test:watch": "jest --watch",
-    "type-check": "tsc --project tsconfig.json --pretty --noEmit",
-    "prepare": "husky install"
+    "type-check": "tsc --project tsconfig.json --pretty --noEmit"
+  },
+  "lint-staged": {
+    "*.{ts,js}": [
+      "yarn lint:fix",
+      "yarn test --findRelatedTests --bail --passWithNoTests"
+    ]
   },
   "devDependencies": {
     "@types/jest": "29.5.1",
@@ -22,6 +28,7 @@
     "eslint-plugin-jest": "27.2.1",
     "husky": "^8.0.0",
     "jest": "29.5.0",
+    "lint-staged": "13.2.1",
     "ts-jest": "29.1.0",
     "ts-node": "10.9.1",
     "typescript": "5.0.4"
