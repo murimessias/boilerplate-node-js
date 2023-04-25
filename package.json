@@ -1,0 +1,7 @@
+{
+  "name": "clean-node-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Murilo Messias de Camargo <murilo.messias@gmail.com>",
+  "license": "MIT"
+}
