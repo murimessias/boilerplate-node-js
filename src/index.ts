@@ -1,1 +1,1 @@
-console.log('typescript log message!')
+console.log('Welcome! Now you can start your app.')
